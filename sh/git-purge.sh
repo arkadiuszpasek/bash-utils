@@ -2,7 +2,7 @@
 
 # git-purge - Delete local branches matching a pattern
 # Usage: git-purge <pattern1> [pattern2] [...]
-# Example: git-purge 'feature/.*' 'bugfix/.*'
+# Example: git-purge feature/users feature/auth
 
 git-purge() {
   if [ "$#" -eq 0 ]; then
