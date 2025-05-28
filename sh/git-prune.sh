@@ -19,8 +19,7 @@ git-prune() {
       esac
   done
 
-  # Fetch and prune remote-tracking branches silently
-  git fetch --prune origin > /dev/null 2>&1
+  git fetch --prune origin
 
   # Get a list of local branches whose remote tracking branch is marked as 'gone'
   local BRANCHES_TO_DELETE=$(git branch -vv | \
